@@ -1,33 +1,8 @@
-[2018-01-25 23:14:32,139] INFO  index.jsp called
-[2018-01-25 23:14:42,203] INFO  Login called
-[2018-01-25 23:14:42,204] INFO  Session isMobile = false
-[2018-01-25 23:14:42,207] INFO  login called
-[2018-01-25 23:14:42,631] INFO  User name:admin login was successful!
-[2018-01-25 23:14:42,658] INFO  getRecord called
-[2018-01-25 23:14:42,668] INFO  admin.jsp called
-[2018-01-25 23:14:42,669] INFO  getAllPlayers called
-[2018-05-17 17:30:31,026] INFO  index.jsp called
-[2018-05-17 17:30:44,957] INFO  Login called
-[2018-05-17 17:30:44,958] INFO  Session isMobile = false
-[2018-05-17 17:30:44,960] INFO  login called
-[2018-05-17 17:30:45,105] INFO  User name:admin login was successful!
-[2018-05-17 17:30:45,208] INFO  getRecord called
-[2018-05-17 17:30:45,241] INFO  admin.jsp called
-[2018-05-17 17:30:45,242] INFO  getAllPlayers called
-[2018-05-17 17:31:06,369] INFO  Logout called
-[2018-05-17 17:31:06,375] INFO  index.jsp called
-[2018-05-17 17:31:18,452] INFO  index.jsp called
-[2018-05-17 17:31:29,120] INFO  Login called
-[2018-05-17 17:31:29,120] INFO  Session isMobile = false
-[2018-05-17 17:31:29,120] INFO  login called
-[2018-05-17 17:31:29,121] INFO  User name:admin login was successful!
-[2018-05-17 17:31:29,122] INFO  getRecord called
-[2018-05-17 17:31:29,124] INFO  admin.jsp called
-[2018-05-17 17:31:29,124] INFO  getAllPlayers called
-[2018-05-17 17:32:03,650] INFO  emailInvite.jsp called
-[2018-05-17 17:32:37,197] INFO  admin.jsp called
-[2018-05-17 17:32:37,197] INFO  getAllPlayers called
-[2018-05-17 17:32:40,377] INFO  maintenance.jsp called
-[2018-05-17 17:32:40,377] INFO  getAllPlayers called
-[2018-05-17 17:32:58,356] INFO  admin.jsp called
-[2018-05-17 17:32:58,356] INFO  getAllPlayers called
+[2019-03-23 16:08:56,027] INFO  index.jsp called
+[2019-03-23 16:09:04,920] INFO  Login called
+[2019-03-23 16:09:04,923] INFO  Session isMobile = false
+[2019-03-23 16:09:04,952] INFO  login called
+[2019-03-23 16:09:05,316] INFO  User name:admin login was successful!
+[2019-03-23 16:09:05,403] INFO  getRecord called
+[2019-03-23 16:09:05,458] INFO  admin.jsp called
+[2019-03-23 16:09:05,459] INFO  getAllPlayers called
