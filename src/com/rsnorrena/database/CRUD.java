@@ -33,9 +33,7 @@ public class CRUD {
 				
 				String jdbc = "jdbc:sqlite:";
 				//path for database file access on my machines
-//				String path = "C:\\Dropbox\\Development\\Eclipse_Neon\\Java\\Web\\Projects\\workspace\\DropInRegistration\\";
-//				String path = "C:\\set local path for use on another machine\\";
-				String path = "C:\\Dropbox\\Development\\Eclipse_Photon\\Java\\project_archive\\Projects\\DropInRegistration\\";
+				String path = "C:\\Github\\Java\\JavaEE\\2019-03\\program_archive\\DropInRegistration\\";
 //				String path = "./";
 				
 				String fileName = "PlayerInfo.db";
