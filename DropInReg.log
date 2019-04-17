@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [2019-03-23 17:05:34,940] INFO  index.jsp called
 [2019-03-23 17:05:45,521] INFO  Login called
 [2019-03-23 17:05:45,525] INFO  Session isMobile = false
@@ -6,3 +7,13 @@
 [2019-03-23 17:05:45,893] INFO  getRecord called
 [2019-03-23 17:05:46,481] INFO  admin.jsp called
 [2019-03-23 17:05:46,482] INFO  getAllPlayers called
+=======
+[2019-03-23 16:08:56,027] INFO  index.jsp called
+[2019-03-23 16:09:04,920] INFO  Login called
+[2019-03-23 16:09:04,923] INFO  Session isMobile = false
+[2019-03-23 16:09:04,952] INFO  login called
+[2019-03-23 16:09:05,316] INFO  User name:admin login was successful!
+[2019-03-23 16:09:05,403] INFO  getRecord called
+[2019-03-23 16:09:05,458] INFO  admin.jsp called
+[2019-03-23 16:09:05,459] INFO  getAllPlayers called
+>>>>>>> branch 'master' of https://github.com/snorrena/dropInRegistration.git

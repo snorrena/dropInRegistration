@@ -33,9 +33,9 @@ public class CRUD {
 				
 				String jdbc = "jdbc:sqlite:";
 				//path for database file access on my dev machines
-//				String path = "C:\\Github\\Java\\JavaEE\\2019-03\\program_archive\\DropInRegistration\\";
+				String path = "C:\\Github\\Java\\JavaEE\\2019-03\\program_archive\\DropInRegistration\\";
 				//path for docker container
-				String path = "//home/dropInRegistration/";
+//				String path = "//home/dropInRegistration/";
 				
 				String fileName = "PlayerInfo.db";
 
