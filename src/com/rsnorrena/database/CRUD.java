@@ -1,8 +1,5 @@
 package com.rsnorrena.database;
 
-import java.io.File;
-import java.net.URL;
-import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
