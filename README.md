@@ -12,3 +12,5 @@ edit project facets -- add dynamic web module 3.1 and change java to 1.8, remove
 webdoclet
 
 this is needed to add run on server
+
+make certain that the database file can be located from the path string in CRUD.java
