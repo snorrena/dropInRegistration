@@ -52,12 +52,12 @@ public class SendMail extends HttpServlet {
 		log.info("SendMail called");
 		
 		//messages are sent from my gmail account
-		final String username = "snorrena";
-		final String password = "51Tangynorgm";
+		final String userName = "snorrena";
+		final String password = "54Tangynorgm";
 		
 		//ArrayList to hold the email distribution list
 		ArrayList<String> toList = new ArrayList<String>();
-		String to = "";
+		String to = null;
 		Player currentPlayer = null;
 		
 		//collect the email message text body from the calling jsp
@@ -73,19 +73,17 @@ public class SendMail extends HttpServlet {
 			toList.clear();
 			toList.add("snorrena@hotmail.com");
 			toList.add("snorrena@gmail.com");
-//			toList.add("natejohn@telus.net");
 			
 		}else{
-			to = (String) request.getAttribute("sendEmailTo");
-			String test = to;
-			log.info("Email recipient: " + to);
-			//reset while testing
+
+//			to = (String) request.getAttribute("sendEmailTo");
 			to = "snorrena@gmail.com";
-//			to = "natejohn@telus.net";
+			log.info("Testing email recipient: snorrena@gmail");
+			log.info("Production Email recipient: " + to);
 			
 			//get a player obj by reference to the passed in email address
 			//change parameter back to 'to' for production.
-			currentPlayer = CRUD.getRecord(test);
+			currentPlayer = CRUD.getRecord("snorrena@gmail.com");
 			
 		}
 		
@@ -102,11 +100,11 @@ public class SendMail extends HttpServlet {
 					+ " to play hockey on " + DateOfNextGame.getDateOfNextGame() + ".\n\n"
 					+ "If for any reason you are unable to attend, please click on the link below "
 					+ "to cancel and release your place to the next skater on the wait list.\n\n"
-					+ "\'http://snorrena.getmyip.com:8080/DropInRegistration/\'\n\n" + "Thanks\n\n" + "The management";
+					+ "\'http://localhost:8080/DropInRegistration/\'\n\n" + "Thanks\n\n" + "The management";
 		}else if(emailRequest.equals("passwordRecovery")){
 			body = "Hi " + currentPlayer.getFirstName() + "! \n\n" + "Your password is:  \"" + currentPlayer.getPassword() + "\"\n\n"
 					+ "Click on the link below to login and register to play in the next game.\n\n"
-					+ "\'http://snorrena.getmyip.com:8080/DropInRegistration/\'\n\n" + "Thanks\n\n" + "The management";
+					+ "\'http://localhost:8080/DropInRegistration/\'\n\n" + "Thanks\n\n" + "The management";
 		}else if (emailRequest.equals("goalieCancelled")){
 			
 			//retrieve the goalie name from the request
@@ -121,21 +119,27 @@ public class SendMail extends HttpServlet {
 		}
 
 		Properties props = new Properties();
-		props.put("mail.smtp.auth", "true");
-		props.put("mail.smtp.starttls.enable", "true");
 		props.put("mail.smtp.host", "smtp.gmail.com");
 		props.put("mail.smtp.port", "587");
+		props.put("mail.smtp.auth", "true");
+	    props.put("mail.transport.protocol", "smtp");
+		props.put("mail.smtp.starttls.enable", "true");
+		
+		props.put("mail.smtp.user", userName);
 		
 		Session msgSession = Session.getInstance(props, new javax.mail.Authenticator(){
 			protected PasswordAuthentication getPasswordAuthentication(){
-				return new PasswordAuthentication(username, password);
+				return new PasswordAuthentication(userName, password);
 			}
 		});
 		
 		//if the email is to the group then loop through the distribution list to send to all otherwise send to the individual.
 		if (emailRequest.equals("groupEmail")) {
+
 			for (String email : toList) {
+
 				try {
+
 					Message msg = new MimeMessage(msgSession);
 					msg.setFrom(new InternetAddress(from));
 					InternetAddress[] address = { new InternetAddress(email) };
@@ -157,8 +161,10 @@ public class SendMail extends HttpServlet {
 					e.printStackTrace();
 				}
 			} 
+
 		}else{
 			try {
+
 				Message msg = new MimeMessage(msgSession);
 				msg.setFrom(new InternetAddress(from));
 				InternetAddress[] address = { new InternetAddress(to) };
@@ -171,7 +177,7 @@ public class SendMail extends HttpServlet {
 				// for delivery.
 
 				Transport.send(msg);
-
+				
 			} catch (AddressException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

@@ -29,24 +29,23 @@ public class CRUD {
 				Class.forName("org.sqlite.JDBC");
 				
 				String jdbc = "jdbc:sqlite:";
-				//path for database file access on my dev machines
-				//String path = "C:\\Github\\Java\\JavaEE\\2019-03\\program_archive\\DropInRegistration\\";"
+
+				//path for database file on windows
 				String path = "C:\\Github\\Java\\Eclipse\\2020-12\\program_archive\\dropInRegistration\\";
+				
 				//path for docker container
-//				String path = "//home/dropInRegistration/";
+				//String path = "/home/dropInRegistration/";
 				
 				String fileName = "PlayerInfo.db";
 
 				String url = jdbc + path + fileName;
-//				String url = "jdbc:sqlite:${catalina.base}\\webapps\\DropInRegistration\\WEB-INF\\classes\\PlayerInfo.db";
 				
 				conn = DriverManager.getConnection(url);
-//				conn = DriverManager.getConnection("jdbc:sqlite:PlayerInfo.db");
 				
-				//String url = "jdbc:sqlite:C:/Dropbox/Development/Eclipse_Neon/Java/Work/WebApps/workspace/TestLogin/PlayerInfo.db";
-//				conn = DriverManager.getConnection(url);
 			}
+
 			return conn;
+
 		} catch (Exception e) {
 			
 			return null;
