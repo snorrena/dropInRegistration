@@ -33,6 +33,9 @@ public class CRUD {
 				//path for database file on windows
 				String path = "C:\\Github\\Java\\Eclipse\\2020-12\\program_archive\\dropInRegistration\\";
 				
+				//path for database file on windows
+//				String path = "/home/snorrena/Desktop/Github/Java/Eclipse/2021-09/program_archive/dropInRegistration/";
+
 				//path for docker container
 				//String path = "/home/dropInRegistration/";
 				
