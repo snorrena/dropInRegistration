@@ -32,7 +32,7 @@ public class CRUD {
 				String path = "C:/Github/Java/Eclipse/2021-09/program_archive/dropInRegistration/";
 
 				// path for docker container
-				// String path = "/home/dropInRegistration/";
+//				 String path = "/home/dropInRegistration/";
 
 				String fileName = "PlayerInfo.db";
 
