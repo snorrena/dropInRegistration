@@ -1,5 +1,4 @@
 # dropInRegistration
-DropInRegistration
 
 What does the app do?
 
