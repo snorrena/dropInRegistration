@@ -20,14 +20,15 @@ Requirements to install and run this application from an IDE
 
 
 login as admin
+
   user name: admin
   password: admin
   
 login as a player
+
   user name: snorrena@gmail.com
   password: snorrena@gmail.com
   
- ***note the included version of this application re-directs all email to snorrena@gmail.com for testing purposes. If the application will be run in production, then the admin email and password should be updated and a new war file generated for use in this dockerized version of the application
   
  Admin functions
  
@@ -46,13 +47,21 @@ login as a player
  maintenance:
  
     the maintenance buttons opens a page for the administrator to manually adjust the status of all players. It also includes functions for adding or 
-    deleting a player from the database 
+    deleting a player from the database
+     
     
    Player functions
    
-   On login, a new player will see a button to join the upcoming game if space is available or an error message if the roster is full. If the player is already registered, they will
-   see a button that will allow for cancellation. If a registered player cancels, the first persion on the wait list is moved into the roster and notified by email of their
-   status change.
+   On login, a new player will see a button to join the upcoming game if space is available or an error message if the roster is full.
+   
+   If the player is already registered, they will see a button that will allow for cancellation.
+   
+   If a registered player cancels, the first person on the wait list is moved into the roster and notified by email of their status change.
+   
+   tech stack:
+   
+   dropInRegistration is a java based application that uses java server pages and a sqlite database on the backend. The app
+   is designed to be packaged as a war file for execution inside an java application server such as tomcat.
    
 Other misc. notes:
 
