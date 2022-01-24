@@ -32,15 +32,19 @@ login as a player
  Admin functions
  
  reset registrations:
+ 
     this will clear all player registration in the database (you probably don't want to do this when testing)
     
  email - new session:
+ 
     this will generate a boiler plate email invite to the next game for all players listed in the database
     
  email - roster status:
+ 
     this generates an email to all users advise of the current registrations for the next game
     
  maintenance:
+ 
     the maintenance buttons opens a page for the administrator to manually adjust the status of all players. It also includes functions for adding or 
     deleting a player from the database 
     
