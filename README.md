@@ -5,11 +5,11 @@ What does the app do?
 
 dropInRegistration is a web application for managing a small group of hockey players who play drop hockey every Friday evening at Britannia Rink
 
-the app includes functions for an administrator to email a group of players advising them to login and register to play in the next game. Each player must then login to claim their spot in the roster for the weekly game.
+the app includes functions for an administrator to group email hockey players advising them to login and register to play in the next drop in game. Each player must then login to claim their spot in the roster for the weekly game.
 
-the app will allow registration of two goaltenders and twenty skaters per game. Once twently skaters are registered, four more may be added to a wait list. If a registered player logs into the application and cancels their registration, the first player on the wait list is moved into the roster and notified by email of the status change.
+the app will allow registration of two goaltenders and twenty skaters per game. Once twenty skaters are registered, four more may be added to a wait list. If a registered player logs into the application and cancels their registration, the first player on the wait list is moved into the roster and automatically notified by email of the status change.
 
-Once all available spots are filled including four on the waitlist, new logins will see an error message advising that all spots are full and to try again next week.
+Once all available spots are filled including four on the wait list, new logins will see an error message advising that all spots are full and to try again next week.
 
 Requirements to install and run this application from an IDE
 
@@ -58,10 +58,10 @@ login as a player
    
    If a registered player cancels, the first person on the wait list is moved into the roster and notified by email of their status change.
    
-   tech stack:
+   Technical stack:
    
    dropInRegistration is a java based application that uses java server pages and a sqlite database on the backend. The app
-   is designed to be packaged as a war file for execution inside an java application server such as tomcat.
+   is designed to be packaged as a war file for execution inside an java application server such as Tomcat.
    
 Other misc. notes:
 
