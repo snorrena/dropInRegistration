@@ -1,5 +1,10 @@
 # dropInRegistration
 
+Technical stack:
+   
+   dropInRegistration is a java based application that uses java server pages and a sqlite database on the backend. The app
+   is designed to be packaged as a war file for execution inside an java application server such as Tomcat.
+
 What does the app do?
 
 dropInRegistration is a web application for managing a small group of hockey players who play drop hockey every Friday evening at Britannia Rink
@@ -57,10 +62,6 @@ login as a player
    
    If a registered player cancels, the first person on the wait list is moved into the roster and notified by email of their status change.
    
-   Technical stack:
-   
-   dropInRegistration is a java based application that uses java server pages and a sqlite database on the backend. The app
-   is designed to be packaged as a war file for execution inside an java application server such as Tomcat.
    
 Other misc. notes:
 
