@@ -52,8 +52,8 @@ public class SendMail extends HttpServlet {
 		log.info("SendMail called");
 		
 		//messages are sent from my gmail account
-		final String userName = "snorrena";
-		final String password = "54Tangynorgm";
+		//final String userName = "snorrena";
+		//final String password = "topSecret";
 		
 		//ArrayList to hold the email distribution list
 		ArrayList<String> toList = new ArrayList<String>();
