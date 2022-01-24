@@ -41,7 +41,7 @@ login as a player
     
  email - roster status:
  
-    this generates an email to all users advise of the current registrations for the next game
+    this generates an email to all users advising of the current registrations for the next game
     
  maintenance:
  
