@@ -52,8 +52,8 @@ public class SendMail extends HttpServlet {
 		log.info("SendMail called");
 		
 		//messages are sent from my gmail account
-		//final String userName = "snorrena";
-		//final String password = "topSecret";
+		final String userName = "snorrena";
+		final String password = "topSecret";
 		
 		//ArrayList to hold the email distribution list
 		ArrayList<String> toList = new ArrayList<String>();
@@ -176,7 +176,8 @@ public class SendMail extends HttpServlet {
 				// Hand the message to the default transport service
 				// for delivery.
 
-				Transport.send(msg);
+				log.info("mail transport.send is suspended");
+//				Transport.send(msg);
 				
 			} catch (AddressException e) {
 				// TODO Auto-generated catch block
